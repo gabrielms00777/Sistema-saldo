@@ -14,7 +14,9 @@
 
     <!-- Scripts -->
     <wireui:scripts />
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    <link rel="stylesheet" href="{{ asset('build/assets/app-6d7fb153.css') }}">
+    <script src="{{ asset('build/assets/app-4a08c204.js') }}" defer></script>
     @livewireStyles
     @stack('styles')
 </head>

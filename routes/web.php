@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Livewire\Balance;
 use App\Http\Livewire\Historic;
@@ -16,14 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', HomeController::class);
 
 
 Route::middleware('auth')->prefix('dashboard')->group(function () {
 
-    Route::get('/', function () {return view('dashboard');})->name('dashboard');
+    // Route::get('/', function () {return view('dashboard');})->name('dashboard');
 
     Route::get('/balance', Balance\Index::class)->name('balance');
 

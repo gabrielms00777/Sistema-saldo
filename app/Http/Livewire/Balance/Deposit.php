@@ -22,7 +22,7 @@ class Deposit extends Component
 
         $balance = auth()->user()->balance()->firstOrCreate([]);
 
-        $response = $balance->deposit((float)$this->value);
+        $response = $balance->deposit($this->value);
 
         if($response){
             $this->depositModal = false;

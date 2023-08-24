@@ -9,8 +9,6 @@ class Index extends Component
 {
     use WithPagination;
 
-    public $sender = '';
-
     public function render()
     {
         return view('livewire.historic.index', [

@@ -12,9 +12,9 @@
                     R$ {{ $amount }}
 
                     <div class="flex items-center gap-2 mt-4">
-                        <livewire:balance.deposit>
-                            <livewire:balance.withdraw>
-                                <livewire:balance.transfer>
+                        <livewire:balance.deposit />
+                        <livewire:balance.withdraw />
+                        <livewire:balance.transfer />
                     </div>
                     {{-- <x-slot name="footer">
                     </x-slot> --}}
